@@ -5,7 +5,7 @@
 @import "includes/normalize";
 
 // VARS
-$baseline: 1.45em;
+$baseline: 22px;
 
 // Mobile First™
 @import "screen-size/base";
@@ -27,10 +27,10 @@ em, strong, h1, h2, h3 {
 
 %title {
   font-weight: normal;
-  font-size: 0.75em;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  word-spacing: 0.2em;
+  font-size: 32px;
+  word-spacing: -0.02em;
+  line-height: $baseline*2;
+  text-align: center;
 }
 
 body, input, textarea {
@@ -86,4 +86,11 @@ article {
 
 figcaption {
 
+}
+
+input {
+  margin-top: $baseline;
+  width: 100%;
+  height: $baseline;
+  padding: $baseline/4;
 }

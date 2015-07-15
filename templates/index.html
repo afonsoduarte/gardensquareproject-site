@@ -2,14 +2,7 @@
 
 {% block main %}
 
-<h2>About us</h2>
 {{ page.text }}
-
-<h2>Recent Projects</h2>
-{% set projects = get('/projects') %}
-{% for child in projects.children %}
-  {% include 'partials/project-snippet.html' %}
-{% endfor %}
 
 
 {% endblock %}
