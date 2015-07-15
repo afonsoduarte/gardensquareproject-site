@@ -1,3 +1,3 @@
-# Public Interventions # #
+# Garden Square project # #
 
-Website for http://publicinterventions.org/
+Website for http://gardensquareproject.org/
