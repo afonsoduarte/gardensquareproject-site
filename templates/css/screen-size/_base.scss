@@ -1,11 +1,11 @@
 // Put CSS rules that are the same for all screen sizes here. Think Mobile First™.
 
 body {
-  padding: $baseline 14em;
+  padding: $baseline 7em;
 
   line-height: $baseline;
 
-  width: 40em;
+  width: 54em;
   margin: 0 auto;
 }
 
@@ -21,7 +21,7 @@ header {
   nav {
     ul {
       padding: 0;
-      margin: $baseline 0;
+      margin: $baseline 0 $baseline*2;
 
       li {
         display: inline;

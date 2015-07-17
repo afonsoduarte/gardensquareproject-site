@@ -30,7 +30,14 @@ em, strong, h1, h2, h3 {
   font-size: 32px;
   word-spacing: -0.02em;
   line-height: $baseline*2;
-  text-align: center;
+  // text-align: center;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body, input, textarea {
@@ -89,8 +96,31 @@ figcaption {
 }
 
 input {
-  margin-top: $baseline;
+  margin: 0 0 $baseline;
   width: 100%;
-  height: $baseline;
-  padding: $baseline/4;
+  line-height: $baseline;
+  padding: $baseline/4 0 0;
+  background: none;
+  border: none;
+  border-bottom: 2px dashed;
+  display: block;
+  font-family: courier, monospace;
+}
+
+.button {
+  font-family: inherit;
+  padding: $baseline/2 $baseline;
+  width: auto;
+  border: 2px solid;
+  background: black;
+  color: white;
+}
+
+[for=mce-MMERGE3] {
+  @extend %title;
+}
+
+:focus {
+  outline: none; //2px solid black;
+  // border-bottom-color: red;
 }
