@@ -2,6 +2,8 @@
 
 {% block main %}
 
+{{ page.intro }}
+
 {% for child in page.children %}
   {% include 'partials/project-snippet.html' %}
 {% endfor %}
